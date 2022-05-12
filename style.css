@@ -4,22 +4,33 @@
     padding: 0;
 }
 
+body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(255,0,0,1) 100%);
+}
+
 .container {
+    height: 100vh;
     max-width: 80%;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .hero{
-    background-color: blue;
+    background-color: rgba(0, 0, 0, 0.596);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 100px;
+    padding: 200px;
+    gap: 30px;
+    border-radius: 40px;
 }
 
 .box{
-    background-color: red;
+    background-color: darkgray;
     height: 100px;
     width: 100px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
