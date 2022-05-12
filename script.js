@@ -46,7 +46,9 @@ setTimeout(function () {
             boxes[i].append(numbers[i]);
         }
     }
-    console.log(score, `punteggio = ${score.length}`);
+    const risultato = document.getElementById('risultato');
+    risultato.style.display = 'block';
+    score.length == 5 ? risultato.append(`hai vinto e il tuo punteggio e' ${score.length}`) : risultato.append(`hai perso e il tuo punteggio e' ${score.length}`)
 }, 3000);
 
 

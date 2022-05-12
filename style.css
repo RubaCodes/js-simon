@@ -1,11 +1,22 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(255,0,0,1) 100%);
+body {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(255, 0, 0, 1) 100%);
+}
+
+h1 {
+    text-transform: capitalize;
+    display: none;
+    color: white;
+    text-align: center;
+    padding: 40px 40px;
+    margin-top: 20px;
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.596);
 }
 
 .container {
@@ -13,10 +24,12 @@ body{
     max-width: 80%;
     margin: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.hero{
+
+.hero {
     background-color: rgba(0, 0, 0, 0.596);
     display: flex;
     justify-content: space-around;
@@ -26,7 +39,7 @@ body{
     border-radius: 40px;
 }
 
-.box{
+.box {
     background-color: darkgray;
     height: 100px;
     width: 100px;
@@ -37,9 +50,10 @@ body{
     font-size: 35px;
 }
 
-.right{
+.right {
     background-color: green;
 }
-.wrong{
+
+.wrong {
     background-color: red;
 }
