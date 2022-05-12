@@ -38,7 +38,6 @@ setTimeout(function () {
             score.push(numbers[i]);
         }
     }
-
     console.log(score, `punteggio = ${score.length}`);
 }, 3000);
 
