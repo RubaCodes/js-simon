@@ -11,6 +11,17 @@
 .hero{
     background-color: blue;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+}
+
+.box{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 35px;
 }

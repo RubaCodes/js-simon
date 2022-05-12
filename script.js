@@ -18,3 +18,8 @@ while (numbers.length < 5){
         numbers.push(randomNumer)
     }
 }
+// inseriemnto numeri sul dom
+const boxes = document.querySelectorAll('.box');
+for(let i=0; i< boxes.length; i++){
+    boxes[i].append(numbers[i])
+}
