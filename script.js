@@ -1,4 +1,4 @@
-// Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
+
 
 // --- FUNZIONI ---
 
@@ -12,7 +12,7 @@ function getRndInteger(min, max) {
 let numbers = [];
 while (numbers.length < 5) {
     const randomNumer = getRndInteger(1, 20);
-    if (!numbers.includes(numbers)) {
+    if (!numbers.includes(randomNumer)) {
         numbers.push(randomNumer)
     }
 }
@@ -30,7 +30,16 @@ setTimeout(function () {
     do {
         entry = Number(prompt('Inserisci numero da 1 a 20;'));
         userPickedNumbers.push(entry)
-    } while (isNaN(entry) || entry < 1 || entry > 20 || userPickedNumbers.length <5);
+    } while (isNaN(entry) || entry < 1 || entry > 20 || userPickedNumbers.length < 5);
+    // Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
+    const score = [];
+    for (let i = 0; i < userPickedNumbers.length; i++) {
+        if (userPickedNumbers.includes(numbers[i])) {
+            score.push(numbers[i]);
+        }
+    }
+
+    console.log(score, `punteggio = ${score.length}`);
 }, 3000);
 
-console.log(userPickedNumbers);
+
