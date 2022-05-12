@@ -8,6 +8,16 @@ function getRndInteger(min, max) {
 }
 
 // ---MAIN ---
+
+//countdown
+// const timer = document.querySelector('.timer');
+// let countdown = 3;
+// const interval = setInterval(function () {
+//     timer.innerHTML = countdown--
+//     if (countdown == -1) clearInterval(interval)
+// }, 1000)
+
+
 //generazione 5 numeri casuali da 1-20 univoci
 let numbers = [];
 while (numbers.length < 5) {
