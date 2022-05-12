@@ -19,7 +19,7 @@ while (numbers.length < 5) {
 // inseriemnto numeri sul dom
 const boxes = document.querySelectorAll('.box');
 for (let i = 0; i < boxes.length; i++) {
-    boxes[i].append(numbers[i])
+    boxes[i].append(numbers[i]);
 }
 
 // Visualizzare in pagina 5 numeri casuali. Da lì parte un timer di 30 secondi.
@@ -27,6 +27,9 @@ for (let i = 0; i < boxes.length; i++) {
 let userPickedNumbers = [];
 let entry;
 setTimeout(function () {
+    for (let i = 0; i < numbers.length; i++) {
+        boxes[i].innerHTML = '';
+    }
     do {
         entry = Number(prompt('Inserisci numero da 1 a 20;'));
         userPickedNumbers.push(entry)
@@ -36,6 +39,11 @@ setTimeout(function () {
     for (let i = 0; i < userPickedNumbers.length; i++) {
         if (userPickedNumbers.includes(numbers[i])) {
             score.push(numbers[i]);
+            boxes[i].classList.add('right');
+            boxes[i].append(numbers[i]);
+        } else {
+            boxes[i].classList.add('wrong');
+            boxes[i].append(numbers[i]);
         }
     }
     console.log(score, `punteggio = ${score.length}`);

@@ -36,3 +36,10 @@ body{
     align-items: center;
     font-size: 35px;
 }
+
+.right{
+    background-color: green;
+}
+.wrong{
+    background-color: red;
+}
