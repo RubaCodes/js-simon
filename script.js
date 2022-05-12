@@ -6,8 +6,15 @@
 
 //ritorna un array di numeri random tra min e mex per size volte
 function getRndInteger(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 // ---MAIN ---
-console.log(getRndInteger(1,20))
+//generazione 5 numeri casuali da 1-20 univoci
+let numbers = [];
+while (numbers.length < 5){
+    const randomNumer = getRndInteger(1,20);
+    if(!numbers.includes(numbers)){
+        numbers.push(randomNumer)
+    }
+}
